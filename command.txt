@@ -26,3 +26,17 @@ php artisan make:model Ticket -m
 php artisan make:model Order -m 
 
 php artisan make:model OrderTicket -m 
+
+
+
+composer require filament/filament:"^3.2" -W
+
+filament/filament (v3.2.133)
+
+php artisan filament:install --panels
+>>  What is the ID? [admin] enter aja
+>> All done! Would you like to show some love by starring the Filament repo on GitHub? (yes/no) [yes] no
+
+
+
+php artisan make:filament-user
