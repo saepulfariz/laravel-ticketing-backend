@@ -1,1 +1,28 @@
 composer create-project laravel/laravel laravel-ticketing-backend
+
+artisan make:migration
+add_some_field_at_users
+>> migration create table? => no
+>> modif table => yes
+>> table => users
+
+php artisan make:migration "add_some_field_at_users"  --table=users
+
+
+php artisan make:model Vendor -m 
+
+php artisan make:model EventCategory -m 
+
+php artisan make:model Event -m 
+
+Stop Keeping Unit
+jenis2 ticket, ticket masuk reguler, vip, qty total di kasih
+
+php artisan make:model Sku -m 
+
+10 SKU, maka 10 ticket
+php artisan make:model Ticket -m 
+
+php artisan make:model Order -m 
+
+php artisan make:model OrderTicket -m 
