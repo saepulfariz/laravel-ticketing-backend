@@ -40,3 +40,8 @@ php artisan filament:install --panels
 
 
 php artisan make:filament-user
+
+
+php artisan make:filament-resource vendor --generate
+
+php artisan storage:link
