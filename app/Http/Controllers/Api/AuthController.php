@@ -116,4 +116,16 @@ class AuthController extends Controller
             ], 400);
         }
     }
+
+    public function logout(Request $request)
+    {
+        $request->user()->currentAccessToken()->delete();
+
+        // Authorization Bearer token
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'User Logged out successfully',
+        ], 200);
+    }
 }
