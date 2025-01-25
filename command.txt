@@ -57,3 +57,13 @@ composer require google/apiclient
 php artisan install:api
 
 php artisan optimize
+
+
+php artisan migrate:fresh --seed
+// migrate refresh sambil seed data
+
+php artisan make:seeder UserSeeder
+// buat seeder
+
+php artisan db:seed UserSeeder
+// panggil seeder
