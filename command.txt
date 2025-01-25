@@ -45,3 +45,15 @@ php artisan make:filament-user
 php artisan make:filament-resource vendor --generate
 
 php artisan storage:link
+
+
+
+API
+
+php artisan make:controller Api/AuthController
+
+composer require google/apiclient
+
+php artisan install:api
+
+php artisan optimize
