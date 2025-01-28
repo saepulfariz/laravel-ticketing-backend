@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Sku;
 use App\Models\Vendor;
 use App\Models\EventCategory;
 use Illuminate\Database\Eloquent\Model;
@@ -27,5 +28,10 @@ class Event extends Model
     public function eventCategory()
     {
         return $this->belongsTo(EventCategory::class);
+    }
+
+    public function skus()
+    {
+        return $this->hasMany(Sku::class);
     }
 }

@@ -33,4 +33,17 @@ class EventController extends Controller
             'data' => $categories
         ]);
     }
+
+    function detail($request)
+    {
+        $event = Event::find($request->event_id);
+        $event->load('eventCategory', 'vendor');
+        $skus = $event->skus();
+        $event['skus'] = $skus;
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Event fetched successfully',
+            'data' => $event
+        ]);
+    }
 }

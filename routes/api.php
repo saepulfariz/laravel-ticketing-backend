@@ -17,3 +17,5 @@ Route::post('/logout', [App\Http\Controllers\Api\AuthController::class, 'logout'
 Route::get('/events/{category_id}', [App\Http\Controllers\Api\EventController::class, 'index']);
 
 Route::get('/event-categories', [App\Http\Controllers\Api\EventController::class, 'categories']);
+
+Route::get('/event/{event_id}', [App\Http\Controllers\Api\EventController::class, 'detail']);
