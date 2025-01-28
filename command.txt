@@ -71,3 +71,5 @@ php artisan db:seed UserSeeder
 php artisan make:controller Api\EventController
 
 php artisan make:controller Api\OrderController
+
+composer require midtrans/midtrans-php
