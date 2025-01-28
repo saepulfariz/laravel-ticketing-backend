@@ -69,3 +69,5 @@ php artisan db:seed UserSeeder
 // panggil seeder
 
 php artisan make:controller Api\EventController
+
+php artisan make:controller Api\OrderController
